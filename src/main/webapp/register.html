@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+</head>
+<style>
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form container */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Style form headings */
+form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Style form labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Style form inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the textarea */
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Add hover effect to the submit button */
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<body>
+<center>
+<h1>Register Here</h1>
+	<form action="sendData" method="post" >
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			
+			<tr>
+				<td>Email ID</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="tel" name="phoneNumber"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td><input type="password" name="cpassword"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Register me"></td>
+			</tr>
+		</table>
+	</form>
+	<h6>Already registered Please login here</h6>
+	<form>
+	<a href="login.html">Login here</a>
+	</form>
+	</center>
+</body>
+</html>

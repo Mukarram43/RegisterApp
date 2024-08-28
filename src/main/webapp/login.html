@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login Page</title>
+</head>
+<style>
+/* Style the body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form container */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Style form headings */
+form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Style form labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Style form inputs */
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Add hover effect to the submit button */
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Style the "Register here" link */
+form a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+/* Add hover effect to the "Register here" link */
+form a:hover {
+    color: #0056b3;
+}
+
+</style>
+<body>
+<center>
+<h1>login Here</h1>
+	<form action="login" method="post" >
+		<table>
+			
+			<tr>
+				<td>Email ID</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="submit" value="login"></td>
+			</tr>
+			
+			<tr>
+				<td> Register here</td>
+				
+				<td><a href="register.html">Register</a> </td>
+			</tr>
+			
+		</table>
+	</form>
+	
+	
+	</center>
+</body>
+</html>
